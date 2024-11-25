@@ -1,0 +1,144 @@
+#formulario {
+  scroll-margin-top: 5rem;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000;
+  height: auto;
+}
+
+form {
+  margin-top: 40px;
+  width: 100%;
+  margin-left: 15%;
+  margin-bottom: 40px;
+}
+
+#formulario h2 {
+  color: #fff;
+}
+
+#formulario .text-form {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+input {
+  margin-top: 15px;
+  display: block;
+  width: 70%;
+  height: 5vh;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: transparent;
+}
+
+input:hover {
+  background-color: #7e787848;
+}
+
+textarea:hover {
+  background-color: #7e787848;
+}
+
+input,
+textarea {
+  color: #ffffff;
+}
+
+textarea {
+  width: 70%;
+  height: 20vh;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color: transparent;
+}
+
+.btn-envioForm {
+  margin-top: 15px;
+  padding: 0;
+  border: 1px solid #fff;
+  height: 30px;
+  width: 80px;
+  background: black;
+  color: white;
+  transition: 0.5s scale;
+  cursor: pointer;
+}
+
+.btn-envioForm:hover {
+  scale: 1.1;
+  background-color: #7e787848;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ffffff;
+}
+
+.espacio-git {
+  padding-top: 25px;
+  color: #fff;
+}
+
+.github-count .git {
+  margin-top: 20px;
+  background-color: transparent;
+  width: 80%;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.espacio-git .github-count div .text-git {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.espacio-git .github-count img {
+  border-radius: 10px;
+  width: 200px;
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.github-count .bio {
+  padding-top: 20px;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.github-count .location {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.git a {
+  padding: 7px;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  width: 120px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  display: block;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.git a:hover {
+  cursor: pointer;
+  background-color: #353535;
+  scale: 1.1;
+}

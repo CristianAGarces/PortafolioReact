@@ -1,0 +1,41 @@
+#presentacion {
+  scroll-margin-top: 7rem;
+  margin-top: 120px;
+  display: flex;
+  width: 100%;
+  height: 35vw;
+  z-index: -1;
+  position: relative;
+}
+.izquierda {
+  position: relative;
+  left: 10vh;
+  width: 50%;
+  top: 6vh;
+  height: auto;
+}
+.izquierda > h1 {
+  font-size: 4.6vw;
+}
+.izquierda > h2 {
+  font-size: 2.8vw;
+}
+.izquierda > p {
+  width: 100%;
+  font-size: 1.4vw;
+  text-align: justify;
+}
+.derecha {
+  width: 50%;
+  margin: 1vh auto;
+  text-align: center;
+}
+.imgPresentacion {
+  position: relative;
+  left: 8vh;
+  top: 1vh;
+  border-radius: 30px;
+  width: 52vh;
+  height: 65vh;
+  background-color: #000;
+}

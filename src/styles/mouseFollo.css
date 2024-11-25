@@ -1,0 +1,26 @@
+#mouse {
+  text-align: center;
+}
+
+.btn-follow {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+  color: #fff;
+  width: 15rem;
+  height: 3rem;
+  top: 1.5rem;
+}
+.btn-follow :hover {
+  border: 1px solid;
+  border-color: gray;
+}
+.btn-follow :focus,
+.btn-follow :focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}

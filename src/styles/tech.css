@@ -1,0 +1,143 @@
+#tecnologias {
+  scroll-margin-top: 5rem;
+  margin-top: 40px;
+  padding: 25px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#tecnologias h2 {
+  margin-top: 30px;
+}
+
+.contenedor-tecnologias {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img-tech {
+  width: 60px;
+  height: 80px;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+
+.cajas-tech:hover {
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  background-color: #545454;
+}
+
+.cajas-tech {
+  display: flex;
+  width: 100%;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.label {
+  width: 18.3%;
+  margin: 10px 10px;
+  display: flex;
+  transition: 0.5s;
+  transition: all 300ms ease;
+}
+
+.content-text {
+  text-align: left;
+}
+
+.content-text p {
+  font-size: 0.9rem;
+}
+
+input[type="checkbox"][id^="btn-modal-"] {
+  display: none;
+}
+
+.container-modal {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(165, 165, 165, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+input[type="checkbox"][id^="btn-modal-"]:checked + .container-modal {
+  display: flex;
+}
+
+.content-modal {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 10px 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.content-modal h2 {
+  text-align: left;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.content-modal p {
+  text-align: justify;
+  color: #000000;
+  padding: 15px 0;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.content-modal .btn-cerrar {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content-modal .btn-cerrar .label {
+  padding: 7px 10px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.content-modal .btn-cerrar .label:hover {
+  background-color: #4f4f4f;
+}
+
+.cerrar-modal {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 720px) {
+  .content-modal {
+    width: 90%;
+  }
+  .label {
+    width: 45%;
+  }
+}

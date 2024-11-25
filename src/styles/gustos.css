@@ -1,0 +1,31 @@
+#gustos {
+    scroll-margin-top: 5rem;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#gustos h2 {
+  font-size: 3rem;
+}
+
+#gustos p {
+  font-size: 1.1rem;
+  width: 80%;
+}
+
+.img-gustos {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.img-misgustos {
+  width: 20%;
+  height: 200px;
+}
