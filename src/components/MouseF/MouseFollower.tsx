@@ -6,10 +6,8 @@ const MouseFollower = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    console.log("effect", { enabled });
     const handleMove = (event:any) => {
       const { clientX, clientY } = event;
-      console.log("handleMove", { clientX, clientY });
       setPosition({ x: clientX, y: clientY });
     };
     if (enabled) {
@@ -17,14 +15,6 @@ const MouseFollower = () => {
     }
     return () => {
       window.removeEventListener("pointermove", handleMove);
-    };
-  }, [enabled]);
-
-  useEffect(() => {
-    document.body.classList.toggle("no-cursor", enabled);
-
-    return () => {
-      document.body.classList.remove("no-cursor");
     };
   }, [enabled]);
 
@@ -50,7 +40,8 @@ const MouseFollower = () => {
         }}
       />
       <button className="btn-follow" onClick={() => setEnabled(!enabled)}>
-        {enabled ? "Desactivar" : "Activar"} Seguir puntero
+        {enabled ? "Desactivar" : "Activar"}<br/>
+        MouseFollo
       </button>
       </section>
     </>

@@ -1,26 +1,37 @@
+/* mouseFollo.css */
 #mouse {
-  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Esto asegura que el contenedor no bloquee los clics */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+#mouse div {
+  pointer-events: none; /* Asegura que el seguidor del mouse no bloquee los clics */
 }
 
 .btn-follow {
+  z-index: 2000;
+  pointer-events: auto;
+  padding: 5px;
   position: relative;
   border-radius: 8px;
   border: 1px solid;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 13px;
   font-weight: 500;
   background-color: rgba(0, 0, 0, 1);
   cursor: pointer;
   color: #fff;
-  width: 15rem;
+  width: 5rem;
   height: 3rem;
-  top: 1.5rem;
+  top: 90%;
+  left: 91%;
 }
-.btn-follow :hover {
+.btn-follow:hover {
   border: 1px solid;
   border-color: gray;
-}
-.btn-follow :focus,
-.btn-follow :focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  background: rgb(55, 55, 55);
 }

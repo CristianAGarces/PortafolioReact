@@ -1,6 +1,6 @@
 import Menu from "./components/Menu/Menu";
 import Principal from "./pages/principal/Principal";
-import MouseFollow from './components/MouseF/MouseFollower';
+import MouseFo from "./components/MouseF/MouseFollower";
 import AcercaDeMi from "./pages/about-me/AcercaDeMi";
 import Experiencia from "./pages/experience/Experiencia";
 import Tech from "./pages/tech/Tech";
@@ -15,8 +15,8 @@ function App() {
     <>
       <Menu contacto="#formulario" />
       <main>
+        <MouseFo/>
         <Principal />
-        <MouseFollow/>
         <AcercaDeMi />
         <Experiencia />
         <Tech />

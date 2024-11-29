@@ -39,7 +39,7 @@ const Contact = () => {
           disabled={state.submitting}
         >Enviar</button>
       </form>
-      <aside data-aos="fade-up" className="espacio-git">
+      <aside className="espacio-git">
         <h2>
           Cuenta de GitHub<span>&#128526;</span>
         </h2>

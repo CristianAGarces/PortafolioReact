@@ -104,9 +104,7 @@ const ListTech = [
     description: "Lenguaje backend con el cual se basaron muchos otros",
     img: C,
     explicacion: "Lenguaje de scripting de muy bajo nivel con el cual es muy comodo aprender logica de programacion y estructura de datos, con el cual se basaron lenguajes mas recientes como C++ o C# los cuales son usados para trabajar con SO y videojuegos como en el caso de C#.",
-  },
+  },                                                           
 ];
-
-console.log(ListTech)
 
 export default ListTech;
