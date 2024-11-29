@@ -23,8 +23,11 @@ h2 {
 
 .icons {
   justify-content: center;
+  align-items: center;
+  text-align: center;
   display: flex;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .styleicons {
@@ -35,7 +38,7 @@ h2 {
   width: 50px;
   height: 50px;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1.8rem;
   transition: 1s;
 }
 

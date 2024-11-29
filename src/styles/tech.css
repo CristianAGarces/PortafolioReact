@@ -28,15 +28,16 @@
 }
 
 .cajas-tech:hover {
-  border: 1px solid #ffffff;
-  border-radius: 5px;
-  background-color: #545454;
+  border:1px solid #fff;
+  background-color: #353535;
 }
 
 .cajas-tech {
+  border: 1px solid transparent;
   display: flex;
-  width: 100%;
-  padding: 15px;
+  width: 120%;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -134,10 +135,20 @@ input[type="checkbox"][id^="btn-modal-"]:checked + .container-modal {
 }
 
 @media screen and (max-width: 720px) {
+  #tecnologias{
+    height: auto;
+    padding: 13px 5px;
+  }
+
+  .contenedor-tecnologias{
+    width: 100%;
+  }
+
   .content-modal {
     width: 90%;
   }
   .label {
-    width: 45%;
-  }
+    margin: 8px 3px;
+    width: 48%;
+    }
 }

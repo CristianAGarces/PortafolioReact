@@ -8,14 +8,14 @@
   main {
     width: 100%;
   }
-  
+
   #presentacion {
     margin-top: 90px;
     scroll-margin-top: 5rem;
     width: 100%;
     display: block;
     height: 100vh;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     justify-content: center;
   }
 
@@ -34,14 +34,14 @@
     font-size: 2rem;
   }
 
-  .izquierda p{
+  .izquierda p {
     width: 90%;
     font-size: 1rem;
   }
 
   #presentacion .derecha {
     width: 100%;
-    margin-top: 90px; 
+    margin-top: 90px;
     text-align: center;
   }
 
@@ -51,7 +51,8 @@
     left: 0vh;
   }
 
-  .btn-follow{
+  .btn-follow {
+    top: 83%;
     left: 75%;
   }
 
@@ -62,7 +63,7 @@
   .acerca-experiencia {
     margin-left: 10%;
   }
-  .icons{
+  .icons {
     margin: auto;
     width: 100%;
     justify-content: space-between;
@@ -114,7 +115,7 @@
   }
 
   #formulario {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     display: flex;
     margin: 0;
     width: 100%;
@@ -128,26 +129,24 @@
     padding-bottom: 30px;
   }
 
-  form h2{
+  form h2 {
     padding-top: 5px;
   }
 
-  #formulario .espacio-git{
+  #formulario .espacio-git {
     justify-content: center;
     align-items: center;
     text-align: center;
-    
   }
 
-  .git{
+  .git {
     width: 90%;
     margin: auto;
   }
 
- input{
+  input {
     margin: 15px auto 0;
     justify-items: center;
-  
   }
 
   .cv {
@@ -158,69 +157,32 @@
     align-items: center;
   }
 
-  form .envio{
-    margin-left: 40% ;
+  form .envio {
+    margin-left: 40%;
   }
 
-  #social{
+  #social {
     padding: 0;
   }
 
-  #social h2{
+  #social h2 {
     padding-top: 25px;
   }
 
-  .social-links{
+  .social-links {
     margin: 0;
     width: auto;
     height: auto;
   }
 
-  .links-social img{
-    width: 60px;
-    height: 60px;
+  .links-social img {
+    width: 100%;
+    height: 80%;
   }
 
-  .img-asideSocialNet{
+  .img-asideSocialNet {
     margin-top: 35px;
     gap: 40px;
     justify-content: center;
   }
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: rgba(0,0,0,0.5);
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border: 2px solid;
-  border-color: #fff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
-
-body.no-cursor {
-  cursor: none;
 }
