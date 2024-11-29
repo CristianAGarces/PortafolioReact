@@ -20,7 +20,7 @@ header {
   background-color: rgb(0, 0, 0);
   justify-content: right;
   height: 80px;
-  width: 100%;
+  width: 130%;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -57,14 +57,15 @@ label svg {
   width: 40px;
   height: 40px;
   color: #fff;
-}
-
-label svg {
   cursor: pointer;
 }
 
+.labe-hambur{
+  margin-top: 15px;
+}
+
 #menu_hambur:checked + .ul-links {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 40px);
 }
 .ul-links {
   left: 0;
@@ -73,7 +74,7 @@ label svg {
   overflow: hidden;
   background-color: black;
   display: flex;
-  top: 80px;
+  top: 60px;
   list-style: none;
   justify-content: center;
   position: absolute;
