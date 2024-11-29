@@ -10,7 +10,12 @@
 }
 
 #tecnologias h2 {
+  padding: 5px;
   margin-top: 30px;
+}
+
+#tecnologias p{
+  padding: 5px;
 }
 
 .contenedor-tecnologias {
@@ -35,7 +40,7 @@
 .cajas-tech {
   border: 1px solid transparent;
   display: flex;
-  width: 120%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -137,7 +142,7 @@ input[type="checkbox"][id^="btn-modal-"]:checked + .container-modal {
 @media screen and (max-width: 720px) {
   #tecnologias{
     height: auto;
-    padding: 13px 5px;
+    padding: 13px 0px;
   }
 
   .contenedor-tecnologias{
@@ -149,6 +154,11 @@ input[type="checkbox"][id^="btn-modal-"]:checked + .container-modal {
   }
   .label {
     margin: 8px 3px;
-    width: 48%;
+    width: 80%;
     }
-}
+
+    .cajas-tech{
+      width: 100%;
+    }
+
+  }

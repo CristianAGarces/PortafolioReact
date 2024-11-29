@@ -10,14 +10,14 @@ const listProject = [
     description:
       'Este es un proyecto que realicé durante mi primer semestre en la universidad, donde buscamos solucionar un problema en la facultad de ingeniería. La idea era crear una herramienta que proporcionara las bases de la ciberseguridad a cualquier persona sin conocimientos previos en el tema. Este proyecto, llamado "Free Security", estaba pensado para implementarse a nivel offline.',
     img: FreeSecutity,
-    link:'#'
+    link:'https://freesecurity.netlify.app/'
   },
   {
     id: 2,
     name: "StarMic",
     description: 'Este es el segundo proyecto, llamado "Starmic". Está diseñado para emprendedores que desean hacer crecer sus negocios en internet, pero no saben dónde publicitar sus productos o servicios. Con Starmic, buscamos ofrecer una solución a esta problemática, facilitando la expansión de los emprendimientos en el entorno digital.',
     img: Starmic,
-    link:'#'
+    link:'https://starmic.netlify.app/'
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ const listProject = [
     description:
       'El objetivo de este proyecto, llamado "Telehealth", es optimizar el tiempo de asignación de citas con diferentes especialidades médicas. La plataforma permite a los pacientes programar consultas médicas en línea o dirigirse al lugar donde se encuentra el médico, e incluso ofrece la posibilidad de que el médico se desplaze al domicilio del paciente.',
     img: TeleHealth,
-    link:'#'
+    link:'https://telehealth2.netlify.app/'
   },
   {
     id: 3,
