@@ -60,6 +60,7 @@ textarea {
 }
 
 .btn-envioForm {
+  border-radius: 8px;
   margin-top: 15px;
   padding: 0;
   border: 1px solid #fff;
