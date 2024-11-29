@@ -26,16 +26,22 @@
   }
 
   #presentacion .izquierda h1 {
+    text-align: center;
+    align-items: center;
     width: 100%;
     font-size: 3rem;
   }
 
   #presentacion .izquierda h2 {
+    text-align: center;
+    align-items: center;
     width: 100%;
     font-size: 2rem;
   }
 
   .izquierda p {
+    text-align: center;
+    align-items: center;
     width: 95%;
     font-size: 1rem;
   }
