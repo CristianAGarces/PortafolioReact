@@ -66,7 +66,7 @@ label svg {
 }
 
 #menu_hambur:checked + .ul-links {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 70px);
 }
 .ul-links {
   left: -60px;
@@ -75,7 +75,7 @@ label svg {
   overflow: hidden;
   background-color: black;
   display: flex;
-  top: 40px;
+  top: 70px;
   list-style: none;
   justify-content: center;
   position: absolute;
