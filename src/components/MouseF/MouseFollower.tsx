@@ -41,7 +41,7 @@ const MouseFollower = () => {
       />
       <button className="btn-follow" onClick={() => setEnabled(!enabled)}>
         {enabled ? "Desactivar" : "Activar"}<br/>
-        MouseFollo
+        Follower
       </button>
       </section>
     </>

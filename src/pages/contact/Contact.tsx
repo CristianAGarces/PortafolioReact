@@ -1,27 +1,42 @@
+import { useState, useEffect } from "react";
 import CustomFetch from "./CustomFetching";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaLocationDot } from "react-icons/fa6";
 import "../../styles/contacto.css";
-
 const Contact = () => {
   const { data, loading, error } = CustomFetch("CristianAGarces");
-  const [state, handleSubmit] = useForm("xyzyebna");
-  if (state.succeeded) {
-    return <p>Gracias por tu aporte</p>;
-  }
+  const [state, handleSubmit] = useForm("mdknqzeq");
+  const [formResetKey, setFormResetKey] = useState(0);
+  useEffect(() => {
+    if (state.succeeded) {
+      alert("Gracias por tu aporte");
+      setFormResetKey((prevKey) => prevKey + 1);
+    }
+  }, [state.succeeded]);
 
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>{error}</p>;
 
   return (
     <section id="formulario">
-      <form onSubmit={handleSubmit}>
+      <form
+        key={formResetKey}
+        action="https://formspree.io/f/mdknqzeq"
+        method="POST"
+        onSubmit={handleSubmit}
+      >
         <h2>Contáctame</h2>
         <p className="text-form">Si te gustó mi portafolio ¡contáctame!</p>
         <input type="text" name="name" placeholder="Nombre completo" required />
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
         <input name="email" type="email" placeholder="Email" required />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <input name="subject" type="text" placeholder="Asunto" required />
+        <ValidationError
+          prefix="Subject"
+          field="subject"
+          errors={state.errors}
+        />
         <textarea
           className="campo"
           name="message"
@@ -32,12 +47,16 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        <br/>
+        console.log(state.errors);
+        <br />
         <button
           type="submit"
           className="btn-envioForm"
           disabled={state.submitting}
-        >Enviar</button>
+        >
+          {state.submitting ? "Enviando..." : "Enviar"}
+        </button>
+        console.log(state.error)
       </form>
       <aside className="espacio-git">
         <h2>

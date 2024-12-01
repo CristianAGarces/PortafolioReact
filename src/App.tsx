@@ -9,6 +9,7 @@ import Contacto from "./pages/contact/Contact";
 import SocialNet from "./pages/socialNet/BodySocial";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import "./styles/reset.css"
 
 function App() {
   return (
