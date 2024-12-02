@@ -1,5 +1,5 @@
 import "../../styles/principal.css";
-import FotoPerfil from "../../images/gif.webp";
+import FotoPerfil from "../../images/Perfil.gif";
 
 type Props = {};
 
