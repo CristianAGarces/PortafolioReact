@@ -22,7 +22,7 @@
   justify-content: center;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
   grid-gap: 5px;
 }
 
@@ -69,7 +69,6 @@
 
 .content-text p {
   font-size: 0.9rem;
-  padding: 1px;
 }
 
 input[type="checkbox"][id^="btn-modal-"] {
