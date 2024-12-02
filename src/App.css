@@ -132,13 +132,16 @@
 
   #formulario form {
     margin: 0;
-    align-items: center;
     text-align: center;
     padding-bottom: 30px;
   }
 
   form h2 {
     padding-top: 5px;
+  }
+
+  .recaptcha div div{
+    margin: auto;
   }
 
   #formulario .espacio-git {
@@ -154,7 +157,6 @@
 
   input {
     margin: 15px auto 0;
-    justify-items: center;
   }
 
   .cv {

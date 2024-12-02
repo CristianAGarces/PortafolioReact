@@ -1,18 +1,55 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import CustomFetch from "./CustomFetching";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaLocationDot } from "react-icons/fa6";
 import "../../styles/contacto.css";
+
 const Contact = () => {
+  const [captchaValido, setCaptchaValido] = useState(false);
+  const [formValido, setFormValido] = useState(true);
+  const captcha = useRef(null);
+
   const { data, loading, error } = CustomFetch("CristianAGarces");
   const [state, handleSubmit] = useForm("mdknqzeq");
   const [formResetKey, setFormResetKey] = useState(0);
+
   useEffect(() => {
     if (state.succeeded) {
       alert("Gracias por tu aporte");
       setFormResetKey((prevKey) => prevKey + 1);
+      setCaptchaValido(false);
     }
   }, [state.succeeded]);
+
+  const onChange = () => {
+    if (captcha.current.getValue()) {
+      setCaptchaValido(true);
+    } else {
+      setCaptchaValido(false);
+    }
+  };
+
+  const handleCombinedSubmit = (event: any) => {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+    const allFieldsFilled = Array.from(formData.values()).every(
+      (value) => typeof value === "string" && value.trim() !== ""
+    );
+
+    if (allFieldsFilled && captchaValido) {
+      setFormValido(true);
+      handleSubmit(event);
+    } else {
+      setFormValido(false);
+      if (!captchaValido) {
+        alert("Por favor acepte el captcha");
+      } else {
+        alert("Por favor llene todos los campos del formulario");
+      }
+    }
+  };
 
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>{error}</p>;
@@ -23,7 +60,7 @@ const Contact = () => {
         key={formResetKey}
         action="https://formspree.io/f/mdknqzeq"
         method="POST"
-        onSubmit={handleSubmit}
+        onSubmit={handleCombinedSubmit}
       >
         <h2>Contáctame</h2>
         <p className="text-form">Si te gustó mi portafolio ¡contáctame!</p>
@@ -47,16 +84,27 @@ const Contact = () => {
           field="message"
           errors={state.errors}
         />
-        console.log(state.errors);
         <br />
+        <div className="recaptcha">
+          <ReCAPTCHA
+            ref={captcha}
+            sitekey="6LfFPpAqAAAAAAhU-kMp3X2kip1WYjH5huO_wTUE"
+            onChange={onChange}
+          />
+        </div>
+        {!formValido && !captchaValido && (
+          <div className="error-captcha">
+            Por favor acepte el captcha y llene todos los campos
+          </div>
+        )}
         <button
           type="submit"
           className="btn-envioForm"
           disabled={state.submitting}
+          title="Enviar form"
         >
           {state.submitting ? "Enviando..." : "Enviar"}
         </button>
-        console.log(state.error)
       </form>
       <aside className="espacio-git">
         <h2>
@@ -85,6 +133,7 @@ const Contact = () => {
             <a
               id="button"
               title={`ir a mi github de: ${data.name}`}
+              target="_blank"
               href={`https://github.com/CristianAGarces`}
             >
               Ir a mi GitHub

@@ -12,7 +12,7 @@ const Tech = () => {
       <ul className="contenedor-tecnologias">
         {ListTech.map((tech, index) => (
           <li key={index} className="item">
-            <label className="label" key={tech.id} htmlFor={`btn-modal-${tech.id}`}>
+            <label className="label" htmlFor={`btn-modal-${tech.id}`}>
               <div className="cajas-tech" title={tech.name}>
                 <img className="img-tech" src={tech.img} title={tech.name} />
                 <div className="content-text">

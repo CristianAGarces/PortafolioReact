@@ -29,8 +29,10 @@
   height: 3rem;
   top: 90%;
   left: 91%;
+  transition:1s;
 }
 .btn-follow:hover {
+  scale: 1.1;
   border: 1px solid;
   border-color: gray;
   background: rgb(55, 55, 55);
