@@ -8,7 +8,7 @@ import "../../styles/contacto.css";
 const Contact = () => {
   const [captchaValido, setCaptchaValido] = useState(false);
   const [formValido, setFormValido] = useState(true);
-  const captcha = useRef(null);
+  const captcha = useRef<ReCAPTCHA|null>(null);
 
   const { data, loading, error } = CustomFetch("CristianAGarces");
   const [state, handleSubmit] = useForm("mdknqzeq");
@@ -23,7 +23,7 @@ const Contact = () => {
   }, [state.succeeded]);
 
   const onChange = () => {
-    if (captcha.current.getValue()) {
+    if (captcha.current && captcha.current.getValue()) {
       setCaptchaValido(true);
     } else {
       setCaptchaValido(false);
