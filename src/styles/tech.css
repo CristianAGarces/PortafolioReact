@@ -14,7 +14,7 @@
   margin-top: 30px;
 }
 
-#tecnologias p {
+#tecnologias .text-tech {
   padding: 5px;
 }
 
@@ -69,6 +69,7 @@
 
 .content-text p {
   font-size: 0.9rem;
+  padding: 1px;
 }
 
 input[type="checkbox"][id^="btn-modal-"] {

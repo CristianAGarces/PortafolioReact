@@ -5,7 +5,7 @@ const Tech = () => {
   return (
     <section id="tecnologias">
       <h2 className="title-tech">Las tecnologias que manejo:</h2>
-      <p>
+      <p className="text-tech">
         En esta seccion voy a hablar de las tecnologias en las cuales he
         trabajado y tengo experiencias a nivel junior en el uso de estas
       </p>
