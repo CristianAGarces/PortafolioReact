@@ -14,7 +14,7 @@ import Git from "../../images/GitHub-logo.png";
 import TypeScript from "../../images/typescript.png";
 import NextJS from "../../images/nextjs.png";
 import NestJS from "../../images/nestjs.png";
-import Drizzle from "../../images/drizzle.jpeg";
+import Drizzle from "../../images/Drizzle.jpeg";
 import ShadCN from "../../images/shad.jpg";
 
 const ListTech = [
