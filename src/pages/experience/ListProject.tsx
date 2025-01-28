@@ -29,13 +29,6 @@ const listProject = [
   },
   {
     id: 3,
-    name: "PelisFlex",
-    description: undefined,
-    img: {},
-    link:'#'
-  },
-  {
-    id: 4,
     name: "Maquina de Arcade",
     description:
       "Este es el último proyecto. En él, creamos una máquina de arcade utilizando elementos reciclados. Lo único que compramos fueron los controles para poder jugar, ya que usamos emuladores, una PC que iba a ser desechada y madera reutilizada. Este proyecto demuestra cómo se pueden aprovechar materiales disponibles para crear algo divertido y funcional.",

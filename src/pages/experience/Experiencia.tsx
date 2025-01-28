@@ -7,7 +7,7 @@ const Experiencia = () => {
       <h2>Experiencia</h2>
       <p>En esta seccion les mostrare los proyectos en los que he trabajado</p>
       <ul className="proyectos">
-        {ListProject.map((project,index) => (
+        {ListProject.map((project, index) => (
           <li key={index}>
             <div className="seccion-proyecto">
               <img src={project.img} alt={project.name} title={project.name} />
