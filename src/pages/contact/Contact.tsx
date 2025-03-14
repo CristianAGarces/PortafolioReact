@@ -8,7 +8,7 @@ import "../../styles/contacto.css";
 const Contact = () => {
   const [captchaValido, setCaptchaValido] = useState(false);
   const [formValido, setFormValido] = useState(true);
-  const captcha = useRef<ReCAPTCHA|null>(null);
+  const captcha = useRef<ReCAPTCHA | null>(null);
 
   const { data, loading, error } = CustomFetch("CristianAGarces");
   const [state, handleSubmit] = useForm("mdknqzeq");
@@ -30,10 +30,10 @@ const Contact = () => {
     }
   };
 
-  const handleCombinedSubmit = (event: any) => {
+  const handleCombinedSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const form = event.target;
-    const formData = new FormData(form);
+    const formData = new FormData(form as HTMLFormElement);
     const allFieldsFilled = Array.from(formData.values()).every(
       (value) => typeof value === "string" && value.trim() !== ""
     );
@@ -113,26 +113,26 @@ const Contact = () => {
         <div className="github-count">
           <div className="git">
             <div className="text-git">
-              <p>{data.login}</p>
-              <p>{data.name}</p>
+              <p>{data?.login}</p>
+              <p>{data?.name}</p>
             </div>
             <img
-              src={data.avatar_url}
-              alt={`usuario ${data.name}`}
-              title={`usuario ${data.name}`}
+              src={data?.avatar_url}
+              alt={`usuario ${data?.name}`}
+              title={`usuario ${data?.name}`}
             />
             <p className="location">
               <FaLocationDot />
-              {data.location}
+              {data?.location}
             </p>
-            <p className="bio">{data.bio}</p>
+            <p className="bio">{data?.bio}</p>
             <div className="text-git">
-              <p>Seguidores: {data.followers}</p>
-              <p>Siguiendo: {data.following}</p>
+              <p>Seguidores: {data?.followers}</p>
+              <p>Siguiendo: {data?.following}</p>
             </div>
             <a
               id="button"
-              title={`ir a mi github de: ${data.name}`}
+              title={`ir a mi github de: ${data?.name}`}
               target="_blank"
               href={`https://github.com/CristianAGarces`}
             >
