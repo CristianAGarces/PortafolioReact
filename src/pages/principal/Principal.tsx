@@ -8,7 +8,7 @@ function Principal({}: Props) {
     <section id="presentacion">
       <div className="izquierda">
         <h1>Hola, mi nombre es: Cristian Garces.</h1>
-        <h2>Desarrollador Frontend "Junior".</h2>
+        <h2>Desarrollador FullStack "Junior".</h2>
         <p>
           Hola, como estas. Bienvenido a mi portafolio, en esta ocasion te
           hablare un poco acerca de mi, mis experiencias, mis proyectos, las
