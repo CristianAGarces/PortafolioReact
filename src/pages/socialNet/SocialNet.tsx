@@ -12,7 +12,7 @@ function SocialNet({ children }: Props) {
       <div className="img-asideSocialNet">{children}</div>
       <a
         className="descarga"
-        href="public\download\CV Tech Cristian ATS.pdf"
+        href="public\download\CV Tech Cristian.pdf"
         download
       >
         Da click para descargar mi cv
