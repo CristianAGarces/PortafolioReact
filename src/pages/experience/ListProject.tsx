@@ -2,6 +2,7 @@ import FreeSecutity from "../../images/free-security.png";
 import Starmic from "../../images/starmic.png";
 import TeleHealth from "../../images/telehealth.png";
 import maqArcade from "../../images/maqArcade.jpg";
+import Artiefy from "../../images/Artiefy.png";
 
 const listProject = [
   {
@@ -33,7 +34,21 @@ const listProject = [
     description:
       "Este es el último proyecto. En él, creamos una máquina de arcade utilizando elementos reciclados. Lo único que compramos fueron los controles para poder jugar, ya que usamos emuladores, una PC que iba a ser desechada y madera reutilizada. Este proyecto demuestra cómo se pueden aprovechar materiales disponibles para crear algo divertido y funcional.",
     img: maqArcade,
-  },
+  },{
+    id:4,
+    name:"Fundapmacoe",
+    description:
+      "Este es un proyecto de la Fundación fundapmacoe, donde trabajamos en la implementacion de un sistema para la gestion de madres cabeza de hogar de todo tipos de etnia blanca, india o mestiza que no hayan podido estudiar o quieran nuevas alternativas de vida para tener trabajos dignos de calidad o tener espacios sociales para compartir con otras madres cabezas de hogar en cursos o simplemente brindarles ayuda juridica si tienen problemas intrafamiliares.",
+    img: Artiefy,
+    link:'https://fundapmacoe.org/'
+  },{
+    id:5,
+    name:"Artiefy Inc.",
+    description:
+    "Plataforma de LMS digital buscando mejorar el acceso a la educación a todas las personas sin restricciones de edad, estrato social, etnia o país.",
+    img: Artiefy,
+    link:'https://artiefy.com/'
+  }
 ];
 
 export default listProject;
