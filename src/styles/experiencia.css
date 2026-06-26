@@ -37,20 +37,25 @@
 .proyectos .seccion-proyecto img {
   width: 100%;
   height: 250px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 
 .div-contenido {
   padding: 0 15px 15px 15px;
+  margin: auto;
 }
 
 .div-contenido h3 {
   font-size: 30px;
 }
 
+.div-contenido p {
+  margin-top: 20px;
+  line-height: 1.5rem;
+}
+
 .irSitioweb {
-  position: relative;
-  top: 12px;
+  margin-top: 15px;
   padding: 5px;
   border-radius: 10px;
   background-color: black;
